@@ -14,6 +14,9 @@
 </head>
 <body>
 
+  <!-- ─── PARTICLE CANVAS ─── -->
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+
   <!-- ─── NAVBAR ─── -->
   <nav class="navbar" id="navbar">
     <div class="nav-inner">
@@ -47,8 +50,6 @@
 
   <!-- ─── HERO ─── -->
   <section class="hero" id="hero">
-    <div class="hero-bg-grid"></div>
-    <div class="hero-glow"></div>
 
     <div class="container hero-content">
       <div class="badge" id="hero-badge">
@@ -61,8 +62,9 @@
       </h1>
 
       <p class="hero-sub" id="hero-sub">
-        A lightweight action-scheduling engine for&nbsp;<strong>FTC</strong>.<br />
-        Composable. Conflict-safe. Built for real robots.
+        Stop writing tangled <strong>OpMode</strong> loops.<br />
+        Defined gives your FTC robot a real action architecture —<br class="hero-br" />
+        composable, cancellable, and conflict-safe by design.
       </p>
 
       <div class="hero-actions" id="hero-actions">
